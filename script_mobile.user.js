@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WrbClassConfortable_Mobile
 // @namespace    http://tampermonkey.net/
-// @version      0.11
+// @version      0.12
 // @description  Webclas の選択肢をシャフル
 // @author       Arcsecond
 // @match        https://webclass.kosen-k.go.jp/webclass/mbl.php/*
@@ -57,11 +57,14 @@ trElements.forEach(function(element) {
   element.addEventListener('click', function() {
     skip_conf();
   });
+  element.addEventListener('touchend', function() {
+    skip_conf();
+  });
 });
 
 //解答を確認せず次の問題に
 if (!document.querySelector("form#Question div.content fieldset.question div.ui-radio")) {
-    //next_prob();
+    next_prob();
 }
 
 // シャッフルを実行
