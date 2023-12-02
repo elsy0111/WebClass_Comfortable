@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shuffle
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.11
 // @description  Webclas の選択肢をシャフル
 // @author       Arcsecond
 // @match        https://webclass.kosen-k.go.jp/webclass/*
@@ -109,7 +109,7 @@ if (trElement) {
 }
 
 if (document.getElementById('QstnEndConfirm')) {
-    //next_ans();
+    next_ans();
 }
 
 if (document.getElementById('ViewTitle')) {
