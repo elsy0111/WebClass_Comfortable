@@ -5,7 +5,7 @@ PC上のchromeで [Tampermonkey](https://chromewebstore.google.com/detail/tamper
 
 # Features
 #### 機能のON/OFFを自分で設定したい場合は、自分で該当箇所(呼び出し関数部)のコメントアウト `//` を行ってください
-なお、初期設定は **シャフル, 高さの変更のみ** となっています
+なお、初期設定は **シャフル, 高さの変更, クリックで回答 のみ** となっています
 
 選択肢のシャフル 
 ```
@@ -19,12 +19,6 @@ changeHeight();
 changeHeightAll();
 changeHeightProb();
 ```
-答えてないけどいいの?(赤警告)の自動スキップ
-```
-if (document.getElementById('QstnEndConfirm')) {
-    next_ans();
-}
-```
 選択肢をクリックすると自動で答える
 ```
 // <tr>要素を取得
@@ -37,9 +31,15 @@ if (trElement) {
     });
 }
 ```
+答えてないけどいいの?(赤警告)の自動スキップ
+```
+if (document.getElementById('QstnEndConfirm')) {
+    //next_ans();
+}
+```
 一門ごとに正解を確認(表示)しない
 ```
 if (document.getElementById('ViewTitle')) {
-    next_prob();
+    //next_prob();
 }
 ```
