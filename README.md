@@ -5,7 +5,7 @@ PC上のchromeで [Tampermonkey](https://chromewebstore.google.com/detail/tamper
 
 # Features
 #### 機能のON/OFFを自分で設定したい場合は、自分で該当箇所(呼び出し関数部)のコメントアウト `//` を行ってください
-なお、初期設定は **全てON** となっています
+なお、初期設定は **シャフル, 高さの変更のみ** となっています
 
 選択肢のシャフル 
 ```
