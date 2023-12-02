@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Shuffle
+// @name         WebClassComfortable
 // @namespace    http://tampermonkey.net/
-// @version      0.11
+// @version      0.12
 // @description  Webclas の選択肢をシャフル
 // @author       Arcsecond
 // @match        https://webclass.kosen-k.go.jp/webclass/*
@@ -108,12 +108,14 @@ if (trElement) {
     });
 }
 
+//赤警告むし
 if (document.getElementById('QstnEndConfirm')) {
-    next_ans();
+    //next_ans();
 }
 
+//解答を確認せず次の問題に
 if (document.getElementById('ViewTitle')) {
-    next_prob();
+    //next_prob();
 }
 
 // シャッフルを実行
