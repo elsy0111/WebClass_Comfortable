@@ -90,7 +90,7 @@ function sleep(ms) {
 
 async function skip_conf() {
     console.log('trがクリックされました。');
-    await sleep(10);
+    await sleep(50);
     var QstnChkBtn = document.getElementById('QstnChkBtn');
         if (QstnChkBtn) {
             QstnChkBtn.click();
