@@ -1,7 +1,12 @@
 # WebClass_Comfortable
+PC上のchromeで [Tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=ja)をインストールしてください  
+その後以下スクリプトをインストールするだけです
 ### [Install](https://github.com/elsy0111/WebClass_Comfortable/raw/main/script.user.js)
 
 # Features
+#### 機能のON/OFFを自分で設定したい場合は、自分で該当箇所(呼び出し関数部)のコメントアウト `//` を行ってください
+なお、初期設定は **全てON** となっています
+
 選択肢のシャフル 
 ```
 // シャッフルを実行
@@ -17,7 +22,7 @@ changeHeightProb();
 答えてないけどいいの?(赤警告)の自動スキップ
 ```
 if (document.getElementById('QstnEndConfirm')) {
-    //next_ans();
+    next_ans();
 }
 ```
 選択肢をクリックすると自動で答える
