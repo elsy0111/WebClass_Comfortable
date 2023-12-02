@@ -43,3 +43,5 @@ if (document.getElementById('ViewTitle')) {
     //next_prob();
 }
 ```
+Mobile (端末上でchrome拡張, Tampermonkeyが動かせる特殊な人のみ) 
+### [Install](https://github.com/elsy0111/WebClass_Comfortable/raw/main/script_mobile.user.js)
