@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         WebClassComfortable
 // @namespace    http://tampermonkey.net/
-// @version      0.12
-// @description  Webclas の選択肢をシャフル
+// @version      0.13
+// @description  Webclas の選択肢をシャフル(学年末用改変済み)
 // @author       Arcsecond
 // @match        https://webclass.kosen-k.go.jp/webclass/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
@@ -91,10 +91,10 @@ function sleep(ms) {
 async function skip_conf() {
     console.log('clicked tr element');
     await sleep(50);
-    var QstnChkBtn = document.getElementById('QstnChkBtn');
-        if (QstnChkBtn) {
-            QstnChkBtn.click();
-            console.log("QstnChkBtn skiped :)");
+    var QstnNextBtn = document.getElementById('QstnNextBtn');
+        if (QstnNextBtn) {
+            QstnNextBtn.click();
+            console.log("QstnNextBtn skiped :)");
         }
 }
 
